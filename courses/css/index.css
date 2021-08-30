@@ -1,0 +1,45 @@
+div#interactive-panel {
+    width: 100%;
+    background: white;
+    perspective: 1000px;
+}
+
+#banner {
+    padding: 2vw;
+    background: #337ab7;
+    transition: transform 0.1s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: #fff;
+}
+
+
+.g-bg {
+    background-color: #396c9a !important;
+}
+
+.nav a {
+    color: white !important;
+}
+
+.page-margin-left {
+    margin: 0 20vw;
+}
+
+.section-title {
+    color: #396c9a;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.bg-grey {
+    background-color: #f7f6f1 !important;
+}
+
+section {
+    padding: 5vh 0 !important;
+}
+
+.member-name {
+    font-size: 1.7em;
+}

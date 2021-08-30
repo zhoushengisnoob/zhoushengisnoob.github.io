@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>courses</title>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/colorful.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
+    <!--    vue cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+</head>
+<body>
+<a name="top"></a>
+<a href="#top" style="position: fixed;left: 82vw;top: 80vh;font-size: 5em;z-index: 9999;">
+    <span class="glyphicon glyphicon-circle-arrow-up"></span>
+</a>
+
+<div id="vm-node">
+    <nav class="navbar navbar-default g-bg">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://eagle.zju.edu.cn/" style="color: white">Eagle Lab</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <template v-for="section in sections">
+                        <li v-if="section.navTitle"><a :href="'#'+section.navTitle">{{section.navTitle}}</a></li>
+                    </template>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <div>
+        <section>
+            <div class="container">
+                <!--    课程名-->
+                <div id="interactive-panel">
+                    <div id="banner">
+                        <div class="text-center">
+                            <div class="text-xsl" v-html="courseTitle"></div>
+                            <div class="text-bold text-xl" v-html="courseSubTitle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <!--    课程通知-->
+            <div class="container">
+                <div class="section-title">课程介绍
+                </div>
+                <p v-html="courseIntroducion"></p>
+            </div>
+        </section>
+
+        <section>
+            <!--    课程通知-->
+            <div class="container">
+                <div class="section-title">课程通知
+                </div>
+                <div :class="'alert alert-'+ notification.level" role="alert"
+                     v-for="notification in notifications"
+                     v-html="notification.content">
+                </div>
+            </div>
+        </section>
+        <!--        人员信息-->
+        <section class="bg-grey">
+            <div class="container">
+                <p class="section-title">老师及助教</p>
+                <div v-for="group in avatarGroup">
+                    <p class="text-bold text-xl" v-html="group.groupName"></p>
+                    <div class="row">
+                        <div class="col-lg-2 col-xs-2 text-center" v-for="member in group.members">
+                            <div class="flex justify-center">
+                                <img :src="member.url"
+                                     class=" img-circle img-responsive">
+                            </div>
+                            <div v-html="member.name" class="member-name"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section v-for="(section, index) in sections" :class="index%2 == 0?'':'bg-grey'">
+            <div class="container">
+                <a :name="section.navTitle"></a>
+                <!--                区块title-->
+                <p class="section-title" v-html="section.title"></p>
+                <!--                区块文字条目-->
+                <template v-for="textItems in section.textItems">
+                    <p class="content-title text-bold text-lg" v-if="textItems.title" v-html="textItems.title"></p>
+                    <template v-for="content in textItems.contents">
+                        <ul class="list-group" v-if="content instanceof Array">
+                            <li class="list-group-item" v-for="text in content" v-html="text"></li>
+                        </ul>
+                        <p class="content-text" v-else v-html="content"></p>
+                    </template>
+                </template>
+
+                <table class="table table-striped" v-if="section.tableData">
+                    <tr>
+                        <th v-for="head in section.tableData.heads" v-html="head"></th>
+                    </tr>
+                    <tr v-for="row in section.tableData.rows">
+                        <td v-for="rowItem in row" v-html="rowItem"></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+<script src="data.js"></script>
+<script>
+    window.app = new Vue({
+        el: '#vm-node',
+        data() {
+            this.parseUserData()
+            return window.userData
+        },
+        methods: {
+            parseUserData() {
+                this._traverse(window.userData)
+                this.data = window.userData
+            },
+            md2html(mdText) {
+                mdText = this._href(mdText)
+                mdText = this._bold(mdText)
+                return mdText
+            },
+            _href(mdText) {
+                return mdText.replace(/\[(.*)\]\((.+)\)/g, "<a target='_blank' href=\"" + "$2" + " \" >" + "$1" + "</a>")
+            },
+            _bold(mdText) {
+                return mdText.replace(/\*\*(.+)\*\*/g, "<b>$1</b>")
+            },
+            _traverse(json) {
+                for (let key in json) {
+                    if (json[key] instanceof Object) {
+                        this._traverse(json[key])
+                    } else {
+                        json[key] = this.md2html(json[key])
+                    }
+                }
+
+            }
+        }
+    })
+
+    // 交互式面板
+    $('#interactive-panel').on('mousemove', function (e) {
+
+        let offset = $('#interactive-panel').offset()
+
+        let x = e.pageX - offset.left
+        let y = e.pageY - offset.top
+
+
+        let centerX = $('#interactive-panel').outerWidth() / 2
+        let centerY = $('#interactive-panel').outerHeight() / 2
+
+        let deltaX = x - centerX
+        let deltaY = y - centerY
+
+        let percentX = deltaX / centerX
+        let percentY = deltaY / centerY
+
+        let deg = 10
+
+
+        $('#banner').css({
+            transform: 'rotateX(' + deg * -percentY + 'deg)' +
+                ' rotateY(' + deg * percentX + 'deg)'
+        })
+    })
+
+    $('#interactive-panel').on('mouseleave', function () {
+        $('#banner').css({
+            transform: ''
+        })
+    })
+</script>
+</html>
