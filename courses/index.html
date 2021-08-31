@@ -45,6 +45,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li><a href="#courseIntroduction">课程介绍</a></li>
+                    <li><a href="#notification">课程通知</a></li>
+                    <li><a href="#avatarGroup">课程教师</a></li>
                     <template v-for="section in sections">
                         <li v-if="section.navTitle"><a :href="'#'+section.navTitle">{{section.navTitle}}</a></li>
                     </template>
@@ -68,21 +71,22 @@
                 </div>
             </div>
         </section>
-
+        <!--    课程介绍-->
         <section>
-            <!--    课程通知-->
+            <a name="courseIntroduction"></a>
             <div class="container">
-                <div class="section-title">课程介绍
-                </div>
-                <p v-html="courseIntroducion"></p>
+                <p class="section-title">课程介绍
+                </p>
+                <p v-html="courseIntroduction" class="content-text"></p>
             </div>
         </section>
 
+        <!--    课程通知-->
         <section>
-            <!--    课程通知-->
+            <a name="notification"></a>
             <div class="container">
-                <div class="section-title">课程通知
-                </div>
+                <p class="section-title">课程通知
+                </p>
                 <div :class="'alert alert-'+ notification.level" role="alert"
                      v-for="notification in notifications"
                      v-html="notification.content">
@@ -91,12 +95,13 @@
         </section>
         <!--        人员信息-->
         <section class="bg-grey">
+            <a name="avatarGroup"></a>
             <div class="container">
-                <p class="section-title">老师及助教</p>
+                <p class="section-title">课程教师</p>
                 <div v-for="group in avatarGroup">
                     <p class="text-bold text-xl" v-html="group.groupName"></p>
                     <div class="row">
-                        <div class="col-lg-2 col-xs-2 text-center" v-for="member in group.members">
+                        <div class="col-lg-2 col-xs-3 text-center" v-for="member in group.members">
                             <div class="flex justify-center">
                                 <img :src="member.url"
                                      class=" img-circle img-responsive">
@@ -115,7 +120,7 @@
                 <p class="section-title" v-html="section.title"></p>
                 <!--                区块文字条目-->
                 <template v-for="textItems in section.textItems">
-                    <p class="content-title text-bold text-lg" v-if="textItems.title" v-html="textItems.title"></p>
+                    <p class="content-title" v-if="textItems.title" v-html="textItems.title"></p>
                     <template v-for="content in textItems.contents">
                         <ul class="list-group" v-if="content instanceof Array">
                             <li class="list-group-item" v-for="text in content" v-html="text"></li>
