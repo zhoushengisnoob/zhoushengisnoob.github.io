@@ -41,5 +41,12 @@ section {
 }
 
 .member-name {
-    font-size: 1.7em;
+    font-size: 1.7rem;
+}
+.content-text{
+    font-size: 1.2em;
+}
+.content-title{
+    font-weight: bold;
+    font-size: 2rem;
 }
