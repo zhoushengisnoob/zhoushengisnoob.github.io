@@ -21,13 +21,13 @@ window.userData = {
     avatarGroup: [{
         groupName: "任课老师",
         members: [{
-            url: './resources/周晟.jpg',
+            url: './resources/zhousheng.jpg',
             name: '[周晟](https://zhoushengisnoob.github.io/)'
         }]
     }, {
         groupName: "助教",
         members: [{
-            url: './resources/卓男.jpg',
+            url: './resources/zhuonan.jpg',
             name: '[郑卓男](https://github.com/zfx233)'
         }, {
             url: './resources/huwei.jpg',
