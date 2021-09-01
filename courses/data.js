@@ -1,41 +1,37 @@
 window.userData = {
-    courseTitle: "机器学习",
-    courseSubTitle: "Machine Learning",
+    courseTitle: "数据挖掘与应用",
+    courseSubTitle: "Data Mining and Application",
     courseIntroduction: "随着信息技术的快速发展，人类生产生活中产生了海量的数据。分析和挖掘数据中的潜在模式以及客观规律，对于提升生活质量，生产效率具有重要的意义。\n" +
         "本课程主要讲述数据挖掘相关的基本概念，经典任务，前沿技术以及在实际生产生活中的应用。学习本课程有望在掌握数据挖掘相关知识的同时也培养相关的实践动手能力。",
     notifications: [{
-        content: '课程通知内容',
+        content: '',
         level: 'info'
-    }, {
-        content: '课程通知内容',
-        level: 'warning'
-    }, {
-        content: '课程通知内容',
-        level: 'success'
-    }, {
-        content: '交**作业**了[提交地址](http://github.com)',
-        level: 'danger'
-    }],
+    }
+    // , {
+    //     content: '课程通知内容',
+    //     level: 'warning'
+    // }, {
+    //     content: '课程通知内容',
+    //     level: 'success'
+    // }, {
+    //     content: '交**作业**了[提交地址](http://github.com)',
+    //     level: 'danger'
+    // }
+],
     avatarGroup: [{
         groupName: "任课老师",
         members: [{
-            url: 'http://web.stanford.edu/class/cs224w/images/Jure.jpg',
-            name: '名字'
+            url: './resources/zhousheng.jpg',
+            name: '[周晟](https://zhoushengisnoob.github.io/)'
         }]
     }, {
         groupName: "助教",
         members: [{
-            url: 'http://web.stanford.edu/class/cs224w/images/Jure.jpg',
-            name: '名字'
+            url: './resources/zhuonan.jpg',
+            name: '[郑卓男](https://github.com/zfx233)'
         }, {
-            url: 'http://web.stanford.edu/class/cs224w/images/Jure.jpg',
-            name: '名字'
-        }, {
-            url: 'http://web.stanford.edu/class/cs224w/images/Jure.jpg',
-            name: '名字'
-        }, {
-            url: 'http://web.stanford.edu/class/cs224w/images/Jure.jpg',
-            name: '名字'
+            url: './resources/huwei.jpg',
+            name: '[胡伟](https://github.com/X4tar)'
         }]
     },
     ],
@@ -56,18 +52,21 @@ window.userData = {
         {
             title: '课程大纲',
             navTitle: '课程大纲', // 该字段会被自动收录到导航栏，删除该字段，则不会自动收录，相同的 navTitle 会跳转到相同的位置
+            textItems:[{
+                title:"课程PPT将在开课前一天更新"
+            }],
             tableData: { // 删除该字段，则不显示表格
                 heads: ['时间', '课程内容', '课程概述', '课程PPT'],
-                rows: [['**数据项1-1**', '数据项1-2', '数据项1-3', '[第一周课件下载](./resources/机器学习(一)：5分钟理解机器学习并上手实践 - CaiYongji - 博客园.pdf)'],
-                    ['数据项2-1', '数据项2-2', '数据项2-3', '[第二周通读 github.com](https://github.com)']]
+                rows: [['**2021-09-17**', '数据挖掘与应用简介', '介绍课程的主要内容，形式，要求', ''],
+                    ['**2021-09-24**', '', '', '']]
             }
         },
         {
-            title: 'Frequently Asked Questions',
+            title: '常见问题',
             navTitle: "FAQ",
             textItems: [{
-                contents: ["**Q**: What are the prerequisites for the course?",
-                    "**A**: [Google](https://google.com)"],
+                contents: ["**Q**: 本课程的考核形式是什么?",
+                    "**A**: 课程将设置随堂测试以及期末报告"]
             }],
         }]
 }
