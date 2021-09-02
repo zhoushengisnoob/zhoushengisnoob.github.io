@@ -51,7 +51,7 @@ section {
     font-size: 2rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   .course-title {
     font-size: 4rem;
   }
