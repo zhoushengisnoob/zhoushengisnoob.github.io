@@ -17,7 +17,7 @@
     <!--    vue cdn-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
-     <!--    站点统计-->
+    <!--    站点统计-->
     <script>
         var _hmt = _hmt || [];
         (function () {
@@ -29,8 +29,9 @@
     </script>
 
 </head>
-<body>
 <a name="top"></a>
+
+<body>
 <a href="#top" style="position: fixed;left: 82vw;top: 80vh;font-size: 5em;z-index: 9999;">
     <span class="glyphicon glyphicon-circle-arrow-up"></span>
 </a>
@@ -72,7 +73,7 @@
                 <div id="interactive-panel">
                     <div id="banner">
                         <div class="text-center">
-                            <div class="text-xsl" v-html="courseTitle"></div>
+                            <div class="text-xsl course-title" v-html="courseTitle"></div>
                             <div class="text-bold text-xl" v-html="courseSubTitle"></div>
                         </div>
                     </div>
@@ -150,6 +151,16 @@
     </div>
 </div>
 </body>
+
+<!-- hitwebcounter Code START -->
+<div class="text-center clearfix">
+    <span>访问量统计：</span>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=7862432&style=0038&nbdigits=9&type=page&initCount=0"
+             title="Free Counter" Alt="web counter" border="0"/></a>
+</div>
+
+
 <script src="data.js"></script>
 <script>
     window.app = new Vue({
