@@ -103,26 +103,26 @@
             </div>
         </section>
         <!--        人员信息-->
-        <section >
+        <section>
             <a name="avatarGroup"></a>
             <div class="container">
                 <p class="section-title">课程教师</p>
                 <div v-for="group in avatarGroup">
                     <p class="text-bold text-xl" v-html="group.groupName"></p>
-                    <div class="row">
-                        <div class="col-lg-2 col-xs-3 text-center" v-for="member in group.members">
-                            <div class="flex justify-center">
+                    <div class="flex justify-start">
+                        <div class="text-center margin-right-xl" v-for="member in group.members">
+                            <div>
                                 <img :src="member.url"
-                                     class=" img-circle img-responsive avatar">
+                                     class=" img-circle  avatar">
+                                <div v-html="member.name" class="member-name"></div>
                             </div>
-                            <div v-html="member.name" class="member-name"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section v-for="(section, index) in sections" >
+        <section v-for="(section, index) in sections">
             <div class="container">
                 <a :name="section.navTitle"></a>
                 <!--                区块title-->
