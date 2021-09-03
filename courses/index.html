@@ -113,7 +113,7 @@
                         <div class="col-lg-2 col-xs-3 text-center" v-for="member in group.members">
                             <div class="flex justify-center">
                                 <img :src="member.url"
-                                     class=" img-circle img-responsive">
+                                     class=" img-circle img-responsive" style="max-height: 200px !important;">
                             </div>
                             <div v-html="member.name" class="member-name"></div>
                         </div>
