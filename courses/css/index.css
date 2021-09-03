@@ -56,7 +56,7 @@ section {
     font-size: 4rem;
   }
     .avatar{
-
+       object-fit: cover !important;
     }
 }
 
