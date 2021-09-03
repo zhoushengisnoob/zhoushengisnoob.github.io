@@ -37,7 +37,7 @@ div#interactive-panel {
 }
 
 section {
-    padding: 5vh 0 !important;
+    padding: 2vh 0 !important;
 }
 
 .member-name {
@@ -55,9 +55,16 @@ section {
   .course-title {
     font-size: 4rem;
   }
+    .avatar{
+
+    }
 }
 
 tr{
     line-height: 1.32 !important;
     font-size: 1.2em !important;
+}
+
+.alert{
+    margin-bottom: 0px !important;
 }

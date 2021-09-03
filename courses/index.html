@@ -103,7 +103,7 @@
             </div>
         </section>
         <!--        人员信息-->
-        <section class="bg-grey">
+        <section >
             <a name="avatarGroup"></a>
             <div class="container">
                 <p class="section-title">课程教师</p>
@@ -113,7 +113,7 @@
                         <div class="col-lg-2 col-xs-3 text-center" v-for="member in group.members">
                             <div class="flex justify-center">
                                 <img :src="member.url"
-                                     class=" img-circle img-responsive" style="max-height: 200px !important;">
+                                     class=" img-circle img-responsive avatar">
                             </div>
                             <div v-html="member.name" class="member-name"></div>
                         </div>
@@ -122,7 +122,7 @@
             </div>
         </section>
 
-        <section v-for="(section, index) in sections" :class="index%2 == 0?'':'bg-grey'">
+        <section v-for="(section, index) in sections" >
             <div class="container">
                 <a :name="section.navTitle"></a>
                 <!--                区块title-->
