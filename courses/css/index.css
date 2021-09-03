@@ -43,28 +43,37 @@ section {
 .member-name {
     font-size: 1.7rem;
 }
-.content-text{
+
+.content-text {
     font-size: 1.2em;
 }
-.content-title{
+
+.content-title {
     font-weight: bold;
     font-size: 2rem;
 }
 
 @media screen and (max-width: 500px) {
-  .course-title {
-    font-size: 4rem;
-  }
-    .avatar{
-       object-fit: cover !important;
+    .course-title {
+        font-size: 4rem;
+    }
+
+    .avatar {
+        width: 20vw !important;
+        height: 20vw !important;
     }
 }
 
-tr{
+.avatar {
+    width: 10vw;
+    height: 10vw;
+}
+
+tr {
     line-height: 1.32 !important;
     font-size: 1.2em !important;
 }
 
-.alert{
+.alert {
     margin-bottom: 0px !important;
 }
