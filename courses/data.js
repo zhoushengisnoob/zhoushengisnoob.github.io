@@ -53,7 +53,7 @@ window.userData = {
             title: '课程大纲',
             navTitle: '课程大纲', // 该字段会被自动收录到导航栏，删除该字段，则不会自动收录，相同的 navTitle 会跳转到相同的位置
             textItems:[{
-                title:"课程PPT将在开课前一天更新"
+                title:"课程PPT将在授课后一天更新"
             }],
             tableData: { // 删除该字段，则不显示表格
                 heads: ['时间', '课程内容', '课程概述', '课程PPT'],
