@@ -3,10 +3,11 @@ window.userData = {
     courseSubTitle: "Data Mining and Application",
     courseIntroduction: "随着信息技术的快速发展，人类生产生活中产生了海量的数据。分析和挖掘数据中的潜在模式以及客观规律，对于提升生活质量，生产效率具有重要的意义。\n" +
         "本课程主要讲述数据挖掘相关的基本概念，经典任务，前沿技术以及在实际生产生活中的应用。学习本课程有望在掌握数据挖掘相关知识的同时也培养相关的实践动手能力。",
-    notifications: [{
-        content: '第二次课将在2021.09.26授课',
-        level: 'info'
-    }
+    notifications: [
+    // {
+    //     content: '第二次课将在2021.09.26授课',
+    //     level: 'info'
+    // }
         // , {
         //     content: '课程通知内容',
         //     level: 'warning'
@@ -63,7 +64,7 @@ window.userData = {
                 rows: [['2021-09-16', '数据挖掘与应用简介', '介绍课程的主要内容，形式，要求', ' <a href="./resources/DMCourse_01.pdf" target="_blank">DMCourse_01.pdf</a> '],
                     // ['2021-09-23', '数据预处理技术', '介绍数据采集与数据预处理技术，包括数据清洗，归约与变换', ''],
                     ['2021-09-26', '数据分类技术', '介绍常见的数据分类技术和回归任务，包括决策树、线性回归、线性判别、初探SVM', ' <a href="./resources/DMCourse_2.pdf" target="_blank">DMCourse_2.pdf</a> '],
-                    ['2021-09-30', '数据分类技术2', '贝叶斯分类器、深入理解SVM','<a href="./resources/DMCourse_3.pdf" target="_blank">DMCourse_3.pdf</a> <a href="./resources/titanic.zip" target="_blank">titanic.zip</a>'],
+                    ['2021-09-30', '数据分类技术2', '介绍贝叶斯分类器、深入理解SVM','<a href="./resources/DMCourse_3.pdf" target="_blank">DMCourse_3.pdf</a> <a href="./resources/titanic.zip" target="_blank">titanic.zip</a>'],
                     ['2021-10-14', '异常检测技术', '介绍常见的异常检测技术，包括离散样本，时序样本和时空样本的异常检测技术', ''],
                     ['2021-10-21', '图数据挖掘技术', '介绍常见的图数据挖掘技术，包括图神经网络，节点分类，图分类等技术', ''],
                     ['2021-10-28', '数据挖掘的工业应用 ', '介绍数据挖掘在工业系统中的应用，包括推荐系统，检索系统和电子商务等', '']]
