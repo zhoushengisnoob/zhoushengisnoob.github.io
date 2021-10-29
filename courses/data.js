@@ -68,7 +68,7 @@ window.userData = {
                     ['2021-10-14', '数据聚类技术', '介绍常见的聚类检测技术和指标，包括Kmeans改进版、谱聚类、层次聚类、高斯混合模型聚类、DBSCAN聚类等技术', '<a href="./resources/DMCourse_4.pdf" target="_blank">DMCourse_4.pdf</a>'],
                     ['2021-10-21', '深度聚类技术', '介绍常见的深度聚类技术，如嵌入式聚类系列、对比聚类系列、伪标签系列等，以及基于聚类的表征学习和其他数据类型的聚类。', '<a href="./resources/DMCourse_5.pdf" target="_blank">DMCourse_5.pdf</a>'],
                     ['2021-10-27', '异常检测技术', '介绍常见的异常检测技术', '<a href="./resources/DMCourse_6.pdf" target="_blank">DMCourse_6.pdf</a>'],
-                    ['2021-10-28', '深度异常检测技术', '介绍常见的深度异常检测技术', ''],
+                    ['2021-10-28', '深度异常检测技术', '介绍常见的深度异常检测技术，如深度特征提取、基于特征提取的异常性判断、面向异常检测的特征学习、端到端异常检测模型等。', '<a href="./resources/DMCourse_7.pdf" target="_blank">DMCourse_7.pdf</a> <a href="./resources/VAE_Note.pdf" target="_blank">VAE_Note.pdf</a>'],
                     ['', '数据挖掘的工业应用 ', '介绍数据挖掘在工业系统中的应用，包括推荐系统，检索系统和电子商务等', '']]
             }
         },
