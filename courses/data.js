@@ -4,10 +4,10 @@ window.userData = {
     courseIntroduction: "随着信息技术的快速发展，人类生产生活中产生了海量的数据。分析和挖掘数据中的潜在模式以及客观规律，对于提升生活质量，生产效率具有重要的意义。\n" +
         "本课程主要讲述数据挖掘相关的基本概念，经典任务，前沿技术以及在实际生产生活中的应用。学习本课程有望在掌握数据挖掘相关知识的同时也培养相关的实践动手能力。",
     notifications: [
-    // {
-    //     content: '第二次课将在2021.09.26授课',
-    //     level: 'info'
-    // }
+        {
+            content: '第二次课程作业截止日期：2021-11-14 23：59 <a href="https://workspace.jianguoyun.com/inbox/collect/889b492947744946aa04a2fa5d4e2467/submit" >提交地址</a>',
+            level: 'info'
+        }
         // , {
         //     content: '课程通知内容',
         //     level: 'warning'
