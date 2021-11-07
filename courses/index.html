@@ -32,12 +32,13 @@
 <a name="top"></a>
 
 <body>
-<a href="#top" style="position: fixed;left: 82vw;top: 80vh;font-size: 5em;z-index: 9999;">
-    <span class="glyphicon glyphicon-circle-arrow-up"></span>
-</a>
 
 <div id="vm-node">
-    <nav class="navbar navbar-default g-bg">
+    <a href="#top" style="position: fixed;left: 82vw;top: 80vh;font-size: 5em;z-index: 9999;"
+       :style="{color: themeColor+'!important'}">
+        <span class="glyphicon glyphicon-circle-arrow-up"></span>
+    </a>
+    <nav class="navbar navbar-default g-bg" :style="{backgroundColor: themeColor+'!important'}">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -71,7 +72,7 @@
             <div class="container">
                 <!--    课程名-->
                 <div id="interactive-panel">
-                    <div id="banner">
+                    <div id="banner" :style="{backgroundColor: themeColor+'!important'}">
                         <div class="text-center">
                             <div class="text-xsl course-title" v-html="courseTitle"></div>
                             <div class="text-bold text-xl" v-html="courseSubTitle"></div>
@@ -84,7 +85,7 @@
         <section>
             <a name="courseIntroduction"></a>
             <div class="container">
-                <p class="section-title">课程介绍
+                <p class="section-title" :style="{color: themeColor+'!important'}">课程介绍
                 </p>
                 <p v-html="courseIntroduction" class="content-text"></p>
             </div>
@@ -94,7 +95,7 @@
         <section>
             <a name="notification"></a>
             <div class="container">
-                <p class="section-title">课程通知
+                <p class="section-title" :style="{color: themeColor+'!important'}">课程通知
                 </p>
                 <div :class="'alert alert-'+ notification.level" role="alert"
                      v-for="notification in notifications"
@@ -106,7 +107,7 @@
         <section>
             <a name="avatarGroup"></a>
             <div class="container">
-                <p class="section-title">课程教师</p>
+                <p class="section-title" :style="{color: themeColor+'!important'}">课程教师</p>
                 <div v-for="group in avatarGroup">
                     <p class="text-bold text-xl" v-html="group.groupName"></p>
                     <div class="flex justify-start">
@@ -126,7 +127,7 @@
             <div class="container">
                 <a :name="section.navTitle"></a>
                 <!--                区块title-->
-                <p class="section-title" v-html="section.title"></p>
+                <p class="section-title" v-html="section.title" :style="{color: themeColor+'!important'}"></p>
                 <!--                区块文字条目-->
                 <template v-for="textItems in section.textItems">
                     <p class="content-title" v-if="textItems.title" v-html="textItems.title"></p>
@@ -153,7 +154,8 @@
 
 <!--        页面访问统计-->
 <div class="container">
- <a href='https://clustrmaps.com/site/1bjsb'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=YwNAitC_fn2jWEiFHpUz8mQ5dk6C-8MccWL4jn1yUAQ'/></a>
+    <a href='https://clustrmaps.com/site/1bjsb' title='Visit tracker'><img
+            src='//clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=YwNAitC_fn2jWEiFHpUz8mQ5dk6C-8MccWL4jn1yUAQ'/></a>
 </div>
 <br>
 </body>
@@ -172,13 +174,19 @@
     window.app = new Vue({
         el: '#vm-node',
         data() {
-            this.parseUserData()
-            return window.userData
+            return this.parseUserData()
         },
         methods: {
             parseUserData() {
-                this._traverse(window.userData)
-                this.data = window.userData
+                let course = this.getQueryParam('course')
+                if (!course) {
+                    alert("Course Not Existed")
+                    return {}
+                }
+                let courseData = window.userData[course]
+                this._traverse(courseData)
+                return courseData
+
             },
             md2html(mdText) {
                 mdText = this._href(mdText)
@@ -200,6 +208,16 @@
                     }
                 }
 
+            },
+            getQueryParam(name) {
+                let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)")
+                let r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    return unescape(r[2])
+                } else {
+                    return null
+
+                }
             }
         }
     })
