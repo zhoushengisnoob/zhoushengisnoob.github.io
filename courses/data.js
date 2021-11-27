@@ -139,7 +139,7 @@ window.userData['gnn'] = {
                 heads: ['时间', '课程内容', '课程概述', '课程PPT'],
                 rows: [['2021-11-12', '图神经网络简介', '课程介绍、认识图数据、介绍图特征和图数据挖掘任务；介绍节点表征学习的方法，包括基于矩阵分解和基于随机游走，并证明随机游走和矩阵分解的等价性', '<a href="./resources/GNNCourse_0.pdf" target="_blank">GNNCourse_0.pdf</a> <a href="./resources/GNNCourse_1.pdf" target="_blank">GNNCourse_1.pdf</a>'],
                     ['2021-11-19', '卷积图神经网络', '介绍基于深度自编码器的节点表征学习、融合节点属性的节点表征学习、基于消息传递的节点表征学习和经典图神经网络', '<a href="./resources/GNNCourse_2.pdf" target="_blank">GNNCourse_2.pdf</a> '],
-                    ['2021-11-26', '循环图神经网络', '', ''],
+                    ['2021-11-26', '卷积图神经网络', '介绍卷积、傅里叶变换、图傅里叶变换和卷积图神经网络示例', '<a href="./resources/GNNCourse_3.pdf" target="_blank">GNNCourse_3.pdf</a> '],
                     ['2021-12-3', '生成图神经网络', '', ''],
                     ['2021-12-10', '图结构学习神经网络', '', ''],
                     ['2021-12-17', '图神经网络的理论基础', '', ''],
