@@ -142,7 +142,7 @@ window.userData['gnn'] = {
                     ['2021-11-26', '卷积图神经网络', '介绍卷积、傅里叶变换、图傅里叶变换和卷积图神经网络示例', '<a href="./resources/GNNCourse_3.pdf" target="_blank">GNNCourse_3.pdf</a> '],
                     ['2021-12-3', '循环图神经网络', '介绍循环神经网络、LSTM、GRU以及在图神经网络上的应用', '<a href="./resources/GNNCourse_4.pdf" target="_blank">GNNCourse_4.pdf</a> '],
                     ['2021-12-10', '图结构学习神经网络', '介绍图解钩学习神经网络、图结构生成网络', '<a href="./resources/GNNCourse_5.pdf" target="_blank">GNNCourse_5.pdf</a> '],
-                    ['2021-12-17', '图神经网络的理论基础', '', ''],
+                    ['2021-12-17', '深度社区发现', '', ''],
                     ['2021-12-24', '富信息图神经网络', '', ''],
                     ['2021-12-31', '图神经网络的应用', '', '']]
             }
