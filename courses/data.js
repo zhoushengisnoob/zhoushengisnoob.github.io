@@ -143,7 +143,7 @@ window.userData['gnn'] = {
                     ['2021-12-3', '循环图神经网络', '介绍循环神经网络、LSTM、GRU以及在图神经网络上的应用', '<a href="./resources/GNNCourse_4.pdf" target="_blank">GNNCourse_4.pdf</a> '],
                     ['2021-12-10', '图结构学习神经网络', '介绍图结构学习神经网络、图结构生成网络', '<a href="./resources/GNNCourse_5.pdf" target="_blank">GNNCourse_5.pdf</a> '],
                     ['2021-12-17', '深度社区发现', '介绍图神经网络应用于社区发现任务的思路、案例', '<a href="./resources/GNNCourse_6.pdf" target="_blank">GNNCourse_6.pdf</a> '],
-                    ['2021-12-24', '富信息图神经网络', '', ''],
+                    ['2021-12-24', '富信息图神经网络', '介绍有向图、异构图和动态图的图神经网络技术', '<a href="./resources/GNNCourse_7.pdf" target="_blank">GNNCourse_7.pdf</a>'],
                     ['2021-12-31', '图神经网络的应用', '', '']]
             }
         },
