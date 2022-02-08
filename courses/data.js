@@ -96,7 +96,13 @@ window.userData['gnn'] = {
     courseSubTitle: "Graph Neural Network",
     courseIntroduction: "本课程主要讲述图神经网络的相关背景、现有技术以及在实际生产生活中的应用。 通过兼顾学术前沿与落地应用，提供图神经网络这一研究领域的核心知识，与当前工业界学术界的应用场景紧密相关，并着重强调图神经网络的落地应用能力。",
     themeColor: '#ee4c2c',
-    notifications: [],
+    notifications: [
+        {
+            content: '[2022-02-08]大家好，今天注意到有部分公众号转发了本课程（事先并未与我们联系）。虽然本课程内容是公开的，但是因为是新开的课程，可能存在诸多不完善的地方，还望大家见谅和指导。如有任何问题，也欢迎与我联系:zhousheng_zju@zju.edu.cn',
+            level: 'danger'
+        }
+
+    ],
     avatarGroup: [{
         groupName: "任课老师",
         members: [{
