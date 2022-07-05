@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1920,height=1080,minimum-scale=0.5,user-scalable=yes">
+    <meta name="description" content="Responsive bootstrap landing template">
+    <title>DGLD | Deep Graph Anomaly Detection</title>
+
+    <link href="static/css/styles/github-dark.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- tiny slider -->
+    <link href="static/css/tiny-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/swiper.min.css" type="text/css">
+
+
+    <!-- Materialdesign icons css -->
+    <link href="static/css/materialdesignicons.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/style.css" rel="stylesheet">
+
+    <link href="static/css/mystyle.css" rel="stylesheet">
+
+    <script src="static/js/highlight.min.js"></script>
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-navlist" data-bs-offset="71">
+    <div class="header" id="header">
+    </div>
+    <div class="biggest-div">
+        <h1 class="bigtitle">
+            Get Started
+        </h1>
+        <!-- 一个Unit代码一个块，包括小标题，代码，图片，具体代码以下样例 -->
+        <!-- 替换图片路径就行,其他不用动 -->
+        <div class="unit">
+            <div class="unit-title">Overview</div>
+            <div class="unit-text">Deep Graph Anomaly Detection (DGLD) is a benchmark for node-level graph anomaly detection on Graph.
+                It collects some mainstream datasets and latest models. The process can be devided into 4 sections:
+                Graph Loader, Graph Dataset and Anomaly Injection, Model Construction, Evaluation.
+                DGLD supports convenient function to specify data and randomly inject anomaly. Augmentation will be soon integrated in DGLD.
+                <!-- 替换图片路径就行,其他不用动 -->
+                <div class="unit-img-box">
+                    <image src="static/image/ogb_overview.png" class="unit-img" ></image>
+                </div>
+                
+                <!-- 粘贴代码就行，注意要格式，多出来的空格和回车也会被读到代码框中, -->
+        </div>
+
+        <div class="unit">
+            <div class="unit-title">Package Installation</div>
+
+            <div class="unit-text">DGDL support Installation by pip. Installation by Source code or Conda is in developing.
+                In order to ensure a lightweight installation package, 
+                only the necessary components of DGLD are included in our installation packages, 
+                other installation dependencies need to be installed first, as specified below.
+
+                </br>Required Dependencies:
+
+                <div class="unit-code">
+                    <pre class="hljs"><code class="language-python">joblib==1.1.0
+networkx==2.7.1
+numpy==1.21.2
+ogb==1.3.3
+pandas==1.4.1
+scikit_learn==1.1.1
+scipy==1.8.0
+termcolor==1.1.0
+texttable==1.6.4
+tqdm==4.63.0</code></pre>
+                </div>
+
+
+                <div class="unit-text">In addition to the above dependency packages, PyTorch and DGL is needed, 
+                    we really recommend you to follow the instructions from <a href="https://pytorch.org/">PyTorch</a>
+                    and <a href="https://www.dgl.ai/">DGL</a> official website. 
+                    The minimum version required is as follows(and GPU version is recommended):</div>
+                <div class="unit-code">
+                        <pre class="hljs"><code class="language-python">dgl_cu113==0.8.1 %(GPU)
+torch==1.11.0+cu113 %(GPU)
+
+dgl==0.8.1 %(CPU)
+torch==1.11.0 %(CPU)</code></pre>
+                    </div>
+        </div>
+
+        <div class="unit">
+            <div class="unit-title">Task Process</div>
+            <div class="unit-text">This section will introduce a simple process about DGLD, include "Load data", "Model preform" and "Evaluation".</br>
+                In "Load Data", <span class="hlword">GraphNodeAnomalyDectionDataset</span> is based on <span class = "hlword">DGLDataset</span>,
+                 which has 6 parameters. More detail of parameters can be got in document. Here introduces some basic parameters, 
+                the first parameter <span class="hlword">dataset</span> is a string, input name of dataset or <span class="hlword">custom</span>
+                 for datasets made by yourself.</br>
+
+                In anomaly detection, we inject the abnormal node in two methods, structural and contextual, by two parameters, 
+                <span class="hlword">p</span> and <span class="hlword">k</span>. The structural anomalies are acquired by perturbing the 
+                topological structure of networks. The parameter related with structural anomaly is <span class="hlword">p</span> and 
+                <span class="hlword">q</span>. <span class="hlword">p</span> is the size of clique, 
+                <span class="hlword">q</span> is the number of clique and has been set for different dataset. 
+                The contextual anomalies are acquired by perturbing the attribute of nodes.<span class="hlword">k</span> is 
+                the size of nodes randomly chosen, then assign the target node by the attribute of node 
+                which has largest Euclidean distance between it and target node.</br>
+                
+                gnd_dataset is an instance of <span class="hlword">GraphNodeAnomalyDectionDataset</span>. 
+                <span class="hlword">g</span> is an instance of <span class="hlword">DGL.Graph</span>. 
+                label is an instnace of <span class="hlword">Torch.Tensor</span>, presents the anomaly class, 
+                0 for normal node, 1 for structural node and 2 for contextual node.
+                <div class="unit-code">
+                    <pre class="hljs"><code class="language-python">gnd_dataset = GraphNodeAnomalyDectionDataset("Cora", p = 15, k = 50)
+g = gnd_dataset[0]
+label = gnd_dataset.anomaly_label</code></pre>
+                </div>
+                You can print DGL.graph to get more information about graph.
+                <div class="unit-code">
+                    <pre class="hljs"><code class="language-python">print(g)</code></pre>
+                </div>
+                In "Model preform", DGLD supports basic mothods. It's easy to construct model, and function fit will train the model.
+                Function <span class="hlword">fit</span> need parameters to specify number of epoch and device. For gpu, device should input a int, 
+                while a string 'cpu' for cpu.
+                <div class="unit-code">
+                    <pre class="hljs"><code class="language-python">model = CoLA(in_feats=g.ndata['feat'].shape[1])
+model.fit(g, num_epoch=5, device= 0)</code></pre>
+                </div>
+
+                Finally, get the anomaly score from function predict and metric auc which returns different auc for separative anomaly type
+                and global anomaly. Function predict need parameters to specify graph and test rounds. At the point, "Evaluation" is done.
+                <div class="unit-code">
+                    <pre class="hljs"><code class="language-python">result = model.predict(g, auc_test_rounds=2)
+print(split_auc(label, result))</code></pre>
+                </div>
+                DGLD also supports command line to run model. Basic parameters involve dataset, num_epoch, auc_test_rounds 
+                and logdir(for file saved). More detail is in utils.py in model folder.
+                <div class="unit-code">
+                    <pre class="hljs"><code class="language-python">python main_cola.py --dataset Cora --num_epoch 5 --auc_test_rounds 5 --logdir tmp</code></pre>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+    </div>
+
+
+</body>
+
+</html>
+
+
+<script src="./static/js/header.js">
+</script>
+<script src="./static/js/footer.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+    document.getElementsByClassName("nav-link")[1].classList.add("active")
+</script>
+<script src="static/js/app.js"></script>
+
