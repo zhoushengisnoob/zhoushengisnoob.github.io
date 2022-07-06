@@ -19,7 +19,6 @@ jobs:
           git clone https://zhoushengisnoob:${{ secrets.DGLD }}@github.com/EagleLab-ZJU/DGLD.git
           cd DGLD
           git checkout main
-          rm -rf .git
           cd ..
           git add .
           git commit -m "submodule update"
