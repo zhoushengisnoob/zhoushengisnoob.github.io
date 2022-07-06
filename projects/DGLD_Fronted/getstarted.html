@@ -44,9 +44,10 @@
                 It collects some mainstream datasets and latest models. The process can be devided into 4 sections:
                 Graph Loader, Graph Dataset and Anomaly Injection, Model Construction, Evaluation.
                 DGLD supports convenient function to specify data and randomly inject anomaly. Augmentation will be soon integrated in DGLD.
+            </div>
                 <!-- 替换图片路径就行,其他不用动 -->
                 <div class="unit-img-box">
-                    <image src="static/image/ogb_overview.png" class="unit-img" ></image>
+                    <image src="static/image/DGLD_overview.png" class="unit-img" ></image>
                 </div>
                 
                 <!-- 粘贴代码就行，注意要格式，多出来的空格和回车也会被读到代码框中, -->
@@ -58,7 +59,7 @@
             <div class="unit-text">DGDL support Installation by pip. Installation by Source code or Conda is in developing.
                 In order to ensure a lightweight installation package, 
                 only the necessary components of DGLD are included in our installation packages, 
-                other installation dependencies need to be installed first, as specified below.
+                other installation dependencies need to be installed first, as specified below.</div>
 
                 </br>Required Dependencies:
 
@@ -92,24 +93,14 @@ torch==1.11.0 %(CPU)</code></pre>
         <div class="unit">
             <div class="unit-title">Task Process</div>
             <div class="unit-text">This section will introduce a simple process about DGLD, include "Load data", "Model preform" and "Evaluation".</br>
-                In "Load Data", <span class="hlword">GraphNodeAnomalyDectionDataset</span> is based on <span class = "hlword">DGLDataset</span>,
-                 which has 6 parameters. More detail of parameters can be got in document. Here introduces some basic parameters, 
-                the first parameter <span class="hlword">dataset</span> is a string, input name of dataset or <span class="hlword">custom</span>
-                 for datasets made by yourself.</br>
+                In "Load Data", DGLD support multiple data import methods, including 
+                <a href="https://pytorch-geometric.readthedocs.io/en/latest/">PyTorch Geometric</a>, 
+                <a href="https://www.dgl.ai/">DGL</a> and custom data.
+                DGLD combines the process of data load and anomaly injection. Except for some basic datasets
+                (including "Cora", "Citeseer", "Pubmed", "BlogCatalog", "Flickr", "ogbn-arxiv" and "ACM"), DGLD also accept custom data.</br>
 
-                In anomaly detection, we inject the abnormal node in two methods, structural and contextual, by two parameters, 
-                <span class="hlword">p</span> and <span class="hlword">k</span>. The structural anomalies are acquired by perturbing the 
-                topological structure of networks. The parameter related with structural anomaly is <span class="hlword">p</span> and 
-                <span class="hlword">q</span>. <span class="hlword">p</span> is the size of clique, 
-                <span class="hlword">q</span> is the number of clique and has been set for different dataset. 
-                The contextual anomalies are acquired by perturbing the attribute of nodes.<span class="hlword">k</span> is 
-                the size of nodes randomly chosen, then assign the target node by the attribute of node 
-                which has largest Euclidean distance between it and target node.</br>
-                
-                gnd_dataset is an instance of <span class="hlword">GraphNodeAnomalyDectionDataset</span>. 
-                <span class="hlword">g</span> is an instance of <span class="hlword">DGL.Graph</span>. 
-                label is an instnace of <span class="hlword">Torch.Tensor</span>, presents the anomaly class, 
-                0 for normal node, 1 for structural node and 2 for contextual node.
+                In anomaly detection, DGLD inject the abnormal node in two methods, structural and contextual, by two parameters - p and k.
+                Following is an example showing that a few lines of codes are sufficient to load and inject.</br></div>
                 <div class="unit-code">
                     <pre class="hljs"><code class="language-python">gnd_dataset = GraphNodeAnomalyDectionDataset("Cora", p = 15, k = 50)
 g = gnd_dataset[0]
@@ -119,15 +110,15 @@ label = gnd_dataset.anomaly_label</code></pre>
                 <div class="unit-code">
                     <pre class="hljs"><code class="language-python">print(g)</code></pre>
                 </div>
-                In "Model preform", DGLD supports basic mothods. It's easy to construct model, and function fit will train the model.
+                In "Model preform", DGLD supports basic methods. DGLD supports some basic methods. It's easy to construct and train model.
                 Function <span class="hlword">fit</span> need parameters to specify number of epoch and device. For gpu, device should input a int, 
                 while a string 'cpu' for cpu.
                 <div class="unit-code">
-                    <pre class="hljs"><code class="language-python">model = CoLA(in_feats=g.ndata['feat'].shape[1])
-model.fit(g, num_epoch=5, device= 0)</code></pre>
+                    <pre class="hljs"><code class="language-python">model = CoLA(in_feats = g.ndata['feat'].shape[1])
+model.fit(g, num_epoch = 5, device = 0)</code></pre>
                 </div>
 
-                Finally, get the anomaly score from function predict and metric auc which returns different auc for separative anomaly type
+                Finally, get the anomaly score by function predict. Split_auc will return different auc scores for separative anomaly type
                 and global anomaly. Function predict need parameters to specify graph and test rounds. At the point, "Evaluation" is done.
                 <div class="unit-code">
                     <pre class="hljs"><code class="language-python">result = model.predict(g, auc_test_rounds=2)
@@ -140,7 +131,6 @@ print(split_auc(label, result))</code></pre>
                 </div>
                 </div>
         </div>
-    </div>
 
     <div class="footer" id="footer">
     </div>
