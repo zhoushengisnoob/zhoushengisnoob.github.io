@@ -16,7 +16,7 @@ jobs:
           git config --global user.email "zhanhui@zju.edu.cn"
           git config --global user.name "zhanhui1999"
           rm -rf DGLD
-          git clone https://zhanhui1999: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@github.com/EagleLab-ZJU/DGLD.git
+          git clone https://zhanhui1999:${{ secrets.PERSONAL_TOKEN }}@github.com/EagleLab-ZJU/DGLD.git
           cd DGLD
           git checkout main
           rm -rf .git
