@@ -15,10 +15,12 @@ jobs:
         run: |
           git config --global user.email "zhousheng_zju@zju.edu.cn"
           git config --global user.name "zhoushengisnoob"
+          git rm -rf --cached DGLD
           rm -rf DGLD
-          git clone https://zhoushengisnoob:${{ secrets.DGLD }}@github.com/EagleLab-ZJU/DGLD.git
+          git submodule add https://zhoushengisnoob:${{ secrets.DGLD }}@github.com/EagleLab-ZJU/DGLD.git
           cd DGLD
           git checkout main
+          git pull --all
           cd ..
           git add .
           git commit -m "submodule update"
