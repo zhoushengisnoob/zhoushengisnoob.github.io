@@ -9,14 +9,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
+      
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           git config --global user.email "zhanhui@zju.edu.cn"
           git config --global user.name "zhanhui1999"
           rm -rf DGLD
-          git clone https://zhanhui1999:${{ secrets.PERSONAL_TOKEN }}@github.com/EagleLab-ZJU/DGLD.git
+          git clone https://oauth2:${{ secrets.PERSONAL_TOKEN }}@github.com/EagleLab-ZJU/DGLD.git
           cd DGLD
           git checkout main
           rm -rf .git
