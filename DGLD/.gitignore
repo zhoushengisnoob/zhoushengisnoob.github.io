@@ -1,0 +1,12 @@
+*.pt
+*.zip
+t.py
+*.png
+*.pyc
+*.log
+**/log/*
+**/log_bp/*
+**/tmp/*
+**__pycache__
+src/dgld/data/*
+!src/dgld/data/README.md
