@@ -17,7 +17,7 @@ jobs:
           git config --global user.name "zhoushengisnoob"
           git rm -rf --cached DGLD
           rm -rf DGLD
-          git submodule add https://zhoushengisnoob:${{ secrets.DGLD }}@github.com/EagleLab-ZJU/DGLD.git
+          git submodule add https://github.com/EagleLab-ZJU/DGLD.git
           cd DGLD
           git checkout main
           git pull --all
