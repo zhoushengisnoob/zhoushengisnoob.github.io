@@ -193,6 +193,7 @@
 
 .table-title{
     text-align: center;
+    cursor: pointer;
 }
 
 #navbar{
