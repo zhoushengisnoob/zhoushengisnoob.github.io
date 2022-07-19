@@ -24,4 +24,5 @@ jobs:
           cd ..
           git add .
           git commit -m "submodule update"
+          git pull origin master
           git push origin master
