@@ -32,3 +32,4 @@ window.onload = function() {
     console.log(w)
     document.getElementById("footer-navbar").style.width = w + 'px'
 }
+
