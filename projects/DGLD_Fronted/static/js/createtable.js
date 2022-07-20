@@ -6,7 +6,8 @@ var Ajax = function ()
         var titles = res.title
         var datas = res.data
         for(var i =0 ; i < titles.length;i++){
-            var  begin = '<th class="table-title" onclick="clicke(' + i + ')">'
+            // var  begin = '<th class="table-title" onclick="clicke(' + i + ')">'
+            var  begin = '<th scope="col" onclick="clicke(' + i + ')">'
             var  end = '</th>'
             var concent = begin + titles[i] + "↓" + end
             document.getElementById("table_header").innerHTML += concent
@@ -15,15 +16,22 @@ var Ajax = function ()
         for(var i =0 ; i < datas.length;i++){
             var rowbegin = '<tr>'
             var rowend = '</tr>'
-            var begin = '<td class="table-text">'
+            // var begin = '<td class="table-text">'
+            var begin = '<td>'
             var end = '</td>'
+            var oneBegin = '<th scope="row">'
+            var oneEnd = '</th>'
             var concent =''
             concent += rowbegin
+            var j =0 
             for(var key in datas[i]){
-                concent += begin
+                if(j != 0) concent += begin
+                else concent += oneBegin
                 if(datas[i][key] == 0.0) concent += '-'
                 else concent += datas[i][key]
-                concent += end
+                if(j !=0 ) concent += end
+                else concent +=oneEnd
+                j++
             }
             concent += rowend
             document.getElementById("table_body").innerHTML += concent
@@ -45,15 +53,22 @@ function clicke(i){
         for(var i =0 ; i < datas.length;i++){
             var rowbegin = '<tr>'
             var rowend = '</tr>'
-            var begin = '<td class="table-text">'
+            // var begin = '<td class="table-text">'
+            var begin = '<td>'
             var end = '</td>'
+            var oneBegin = '<th scope="row">'
+            var oneEnd = '</th>'
             var concent =''
             concent += rowbegin
+            var j =0 
             for(var key in datas[i]){
-                concent += begin
+                if(j != 0) concent += begin
+                else concent += oneBegin
                 if(datas[i][key] == 0.0) concent += '-'
                 else concent += datas[i][key]
-                concent += end
+                if(j !=0 ) concent += end
+                else concent += oneEnd
+                j++
             }
             concent += rowend
             document.getElementById("table_body").innerHTML += concent
