@@ -1,4 +1,5 @@
-var text = String.raw`<nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+var text = String.raw`
+<nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
 <div class="container-fluid custom-container">
     <div>
         <a class="navbar-brand logo text-uppercase" href="javascript:;">
@@ -42,3 +43,7 @@ var text = String.raw`<nav class="navbar navbar-expand-lg fixed-top sticky" id="
 <!--end container-->
 </nav>`
 document.getElementById("header").innerHTML += text
+var h  = document.getElementById("navbar").offsetHeight
+// var body = document.body.setAttribute("style","padding-top: " + h + 'px;width: ' + w + 'px')
+var body = document.body.setAttribute("style","padding-top: " + h + 'px')
+
