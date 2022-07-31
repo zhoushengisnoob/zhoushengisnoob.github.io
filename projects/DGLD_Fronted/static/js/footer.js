@@ -14,7 +14,7 @@ var text2 = String.raw`
         </div>
         <div class="row">
             <div class="col footer-name">
-                Sheng Zhou, Peng Zhang, Gaoming Yang, Mengcheng Fang, Jinke Shi, Zinan Guo, Hui Zhan, Rongxiu Gao, Haishuai Wang, Jiajun Bu
+                Sheng Zhou, Peng Zhang, Gaoming Yang, Mengcheng Fang, Jinke Shi, Hui Zhan, Chenyu Lai, Zeyu Fang, Yilun Xu, Zinan Guo, Rongxiu Gao, Haishuai Wang, Jiajun Bu
             </div>
         </div>
         <div class="row">
