@@ -28,12 +28,16 @@ var text = String.raw`
             <li class="nav-item dropdown dropdown-hover">
                 <a href="./leaderboard.html" class="nav-link ">Leaderboard</a>
             </li>
+            <li class="nav-item">
+                <a href="../../DGLD/web/index.html" target="_blank" class="nav-link">Parameter</a>
+            </li>
             <li class="nav-item dropdown dropdown-hover">
                 <a href="../../DGLD/doc/docstring_html/html/dgld.html" target="_blank" class="nav-link ">Docs</a>
             </li>
             <li class="nav-item">
                 <a href="https://github.com/EagleLab-ZJU/DGLD" target="_blank" class="nav-link">Github</a>
             </li>
+
             
         </ul>
         <!--end navbar-nav-->
