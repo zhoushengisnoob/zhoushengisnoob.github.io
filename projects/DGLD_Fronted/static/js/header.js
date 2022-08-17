@@ -1,4 +1,5 @@
-var text = String.raw`<nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+var text = String.raw`
+<nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
 <div class="container-fluid custom-container">
     <div>
         <a class="navbar-brand logo text-uppercase" href="javascript:;">
@@ -27,12 +28,16 @@ var text = String.raw`<nav class="navbar navbar-expand-lg fixed-top sticky" id="
             <li class="nav-item dropdown dropdown-hover">
                 <a href="./leaderboard.html" class="nav-link ">Leaderboard</a>
             </li>
+            <li class="nav-item">
+                <a href="../../DGLD/web/index.html" target="_blank" class="nav-link">Parameter</a>
+            </li>
             <li class="nav-item dropdown dropdown-hover">
                 <a href="../../DGLD/doc/docstring_html/html/dgld.html" target="_blank" class="nav-link ">Docs</a>
             </li>
             <li class="nav-item">
                 <a href="https://github.com/EagleLab-ZJU/DGLD" target="_blank" class="nav-link">Github</a>
             </li>
+
             
         </ul>
         <!--end navbar-nav-->
@@ -42,3 +47,7 @@ var text = String.raw`<nav class="navbar navbar-expand-lg fixed-top sticky" id="
 <!--end container-->
 </nav>`
 document.getElementById("header").innerHTML += text
+var h  = document.getElementById("navbar").offsetHeight
+// var body = document.body.setAttribute("style","padding-top: " + h + 'px;width: ' + w + 'px')
+var body = document.body.setAttribute("style","padding-top: " + h + 'px')
+
