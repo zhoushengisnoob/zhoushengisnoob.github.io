@@ -24,35 +24,18 @@
     height: 20%;
     width: 100%;
 }
-.dgld-info-title{
-
-
-    float: left;
-    width: 30%;
-    height: 100%;
-}
 .dgld-info-content{
     float: right;
     width: 70%;
     height: 100%;
 }
-.dgld-info-content .content{
-    float: right;
-    height: 100%;
-    width: 95%;
+.info-content{
     color: black;
-    display:-webkit-box;
-    -webkit-box-align:center;/* 垂直居中 */
     font-family: 'Times New Roman', Times, serif;
     font-size: 21px;
 }
-.dgld-info-title .title{
-    display:-webkit-box;
-    -webkit-box-align:center;/* 垂直居中 */
-    -webkit-box-pack:center;/* 水平居中 */
-    height: 100%;
-    width: 100%;
-    font-size: 70px;
+.info-title{
+    font-size: 65px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
 }
