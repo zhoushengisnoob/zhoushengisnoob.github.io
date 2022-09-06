@@ -1,15 +1,15 @@
 window.userData = {}
 
-window.userData['data-mining'] = {
+window.userData['data-mining-2021'] = {
     courseTitle: "数据挖掘与应用",
-    courseSubTitle: "Data Mining and Application",
+    courseSubTitle: "Data Mining and Application<br> (2021秋)",
     courseIntroduction: "随着信息技术的快速发展，人类生产生活中产生了海量的数据。分析和挖掘数据中的潜在模式以及客观规律，对于提升生活质量，生产效率具有重要的意义。\n" +
         "本课程主要讲述数据挖掘相关的基本概念，经典任务，前沿技术以及在实际生产生活中的应用。学习本课程有望在掌握数据挖掘相关知识的同时也培养相关的实践动手能力。",
     notifications: [
-        {
-            content: '第二次课程作业截止日期：2021-11-14 23：59 <a href="https://workspace.jianguoyun.com/inbox/collect/889b492947744946aa04a2fa5d4e2467/submit" >提交地址</a>',
-            level: 'info'
-        }
+        // {
+        //     content: '第二次课程作业截止日期：2021-11-14 23：59 <a href="https://workspace.jianguoyun.com/inbox/collect/889b492947744946aa04a2fa5d4e2467/submit" >提交地址</a>',
+        //     level: 'info'
+        // }
         // , {
         //     content: '课程通知内容',
         //     level: 'warning'
@@ -91,7 +91,7 @@ window.userData['data-mining'] = {
 }
 
 
-window.userData['gnn'] = {
+window.userData['gnn-2021'] = {
     courseTitle: "图神经网络",
     courseSubTitle: "Graph Neural Network",
     courseIntroduction: "本课程主要讲述图神经网络的相关背景、现有技术以及在实际生产生活中的应用。 通过兼顾学术前沿与落地应用，提供图神经网络这一研究领域的核心知识，与当前工业界学术界的应用场景紧密相关，并着重强调图神经网络的落地应用能力。",
@@ -161,6 +161,97 @@ window.userData['gnn'] = {
                     "**A**：期末提交一份综述或实验报告",
                     "**Q**：本课程如何考勤？",
                     "**A**：本课程不单独设置考勤，以期末报告为准",
+                    "**Q**：课程是否安排答疑？",
+                    "**A**：老师和助教将在钉钉群内答疑"
+                ]
+            }],
+        }]
+}
+
+
+window.userData['data-mining-2022'] = {
+    courseTitle: "数据挖掘与应用",
+    courseSubTitle: "Data Mining and Application<br> （2022 秋）",
+    courseIntroduction: "随着信息技术的快速发展，人类生产生活中产生了海量的数据。分析和挖掘数据中的潜在模式以及客观规律，对于提升生活质量，生产效率具有重要的意义。\n" +
+        "本课程主要讲述数据挖掘相关的基本概念，经典任务，前沿技术以及在实际生产生活中的应用。学习本课程有望在掌握数据挖掘相关知识的同时也培养相关的实践动手能力。",
+    notifications: [
+        {
+            content: '2022-2023秋学期选课已经开始，欢迎大家选择本课程。',
+            level: 'info'
+        }
+        // , {
+        //     content: '课程通知内容',
+        //     level: 'warning'
+        // }, {
+        //     content: '课程通知内容',
+        //     level: 'success'
+        // }, {
+        //     content: '交**作业**了[提交地址](http://github.com)',
+        //     level: 'danger'
+        // }
+    ],
+    themeColor: '#337ab7',
+    avatarGroup: [{
+        groupName: "任课老师",
+        members: [{
+            url: './resources/zhousheng.png',
+            name: '[周晟](https://zhoushengisnoob.github.io/)'
+        }]
+    }, {
+        groupName: "助教",
+        members: [{
+            url: './resources/zhuonan.jpg',
+            name: '[郑卓男](https://github.com/zfx233)'
+        }, {
+            url: './resources/huwei.jpg',
+            name: '[胡伟](https://github.com/X4tar)'
+        }, {
+            url: './resources/xhj.jpg',
+            name: '[徐鸿嘉](https://github.com/Frostland12138)'
+        }]
+    },
+    ],
+    sections: [{
+        title: '课程信息',
+        navTitle: '课程信息', // 该字段会被自动收录到导航栏，删除该字段，则不会自动收录，相同的 navTitle 会跳转到相同的位置
+        textItems: [{
+            title: '准备知识',
+            contents: ["选择此课程的同学建议具备以下知识：",
+                ["1. 计算机科学与技术基础知识", "2. 线性代数基础", "3. 概率论基础", "4. Python / Matlab 基础代码能力"],
+                "课程第一周将详细介绍具体的准备知识要求"]
+        }, {
+            title: '参考书目',
+            contents: [["1.《数据挖掘概念与技术》，机械工业出版社，2012", "2. 《统计学习方法》，清华大学出版社，2019", "3. 《数据可视化》，陈为等著，电子工业出版社，2019", "4. 《大数据平台异常检测分析的若干关键技术研究》，肖如良编著，电子工业出版社，2020",
+                "5. 《深入浅出图神经网络:GNN 原理解析》，刘忠雨，李彦霖，周洋编著，机械工业出版社，2020"]]
+        }]
+    },
+        {
+            title: '课程大纲',
+            navTitle: '课程大纲', // 该字段会被自动收录到导航栏，删除该字段，则不会自动收录，相同的 navTitle 会跳转到相同的位置
+            textItems: [{
+                title: "课程PPT将在授课后一天更新"
+            }],
+            tableData: { // 删除该字段，则不显示表格
+                heads: ['时间', '课程内容', '课程概述', '课程PPT'],
+                rows: [['', '数据挖掘与应用简介', '介绍课程的主要内容，形式，要求', ''],
+                    // ['2021-09-23', '数据预处理技术', '介绍数据采集与数据预处理技术，包括数据清洗，归约与变换', ''],
+                    ['', '数据分类技术', '介绍常见的数据分类技术和回归任务，包括决策树、线性回归、线性判别、初探SVM', ''],
+                    ['', '数据分类技术2', '介绍贝叶斯分类器、深入理解SVM',''],
+                    ['', '数据聚类技术', '介绍常见的聚类检测技术和指标，包括Kmeans改进版、谱聚类、层次聚类、高斯混合模型聚类、DBSCAN聚类等技术', ''],
+                    ['', '深度聚类技术', '介绍常见的深度聚类技术，如嵌入式聚类系列、对比聚类系列、伪标签系列等，以及基于聚类的表征学习和其他数据类型的聚类。', ''],
+                    ['', '异常检测技术', '介绍常见的异常检测技术', ''],
+                    ['', '深度异常检测技术', '介绍常见的深度异常检测技术，如深度特征提取、基于特征提取的异常性判断、面向异常检测的特征学习、端到端异常检测模型等。', ''],
+                    ['', '图数据挖掘技术 ', '介绍图数据挖掘相关技术，如图上的聚类、分类、异常检测等', '']]
+            }
+        },
+        {
+            title: '常见问题',
+            navTitle: "FAQ",
+            textItems: [{
+                contents: ["**Q**：本课程的考核形式是什么?",
+                    "**A**：课程将设置随堂测试(2*10%) + 期末报告(80%)",
+                    "**Q**：本课程如何考勤？",
+                    "**A**：本课程不单独设置考勤，以随堂测试为准",
                     "**Q**：课程是否安排答疑？",
                     "**A**：老师和助教将在钉钉群内答疑"
                 ]
