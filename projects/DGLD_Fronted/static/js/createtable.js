@@ -42,8 +42,10 @@ var Ajax = function ()
 function clicke(i){
     var sortcol = 'col' + (i + 1);
     function desc(x,y){
-        if(x[sortcol] != y[sortcol]) return y[sortcol] - x[sortcol]
-        else return y['col1'] - x['col1'] 
+        x_mean =  x[sortcol] === '-' ? 0.0 : x[sortcol].split('(')[0]
+        y_mean =  y[sortcol] === '-' ? 0.0 : y[sortcol].split('(')[0]
+        if(x_mean != y_mean) return y_mean - x_mean
+        else return 1
     }
     $.getJSON ("../../DGLD/datas.json", function (res)
     {
