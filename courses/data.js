@@ -287,7 +287,7 @@ window.userData['gnn-2022'] = {
         },
         {
             url: './resources/sjk.png',
-            name: '施金轲'
+            name: '[施金轲](https://github.com/cfuser)'
         }
     ]
     },
