@@ -281,14 +281,15 @@ window.userData['gnn-2022'] = {
             url: './resources/zhuonan.jpg',
             name: '[郑卓男](https://github.com/zfx233)'
         }, 
-        // {
-        //     url: './resources/huwei.jpg',
-        //     name: '[胡伟](https://github.com/X4tar)'
-        // },
          {
             url: './resources/xhj.jpg',
             name: '[徐鸿嘉](https://github.com/Frostland12138)'
-        }]
+        },
+        {
+            url: './resources/sjk.png',
+            name: '施金轲'
+        }
+    ]
     },
     ],
     sections: [{
