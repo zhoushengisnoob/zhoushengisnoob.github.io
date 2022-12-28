@@ -318,8 +318,8 @@ window.userData['gnn-2022'] = {
                     ['2022-11-30', '富信息图神经网络', '介绍有向图、异构图和动态图的图神经网络技术', '<a href="./resources/GNNCourse_4_2022.pdf" target="_blank">GNNCourse_4.pdf</a>'],
                     ['2022-12-7', '图结构学习神经网络', '介绍图结构学习神经网络、图结构生成网络', '<a href="./resources/GNNCourse_5_2022.pdf" target="_blank">GNNCourse_5.pdf</a>'],
                     ['2022-12-14', '深度社区发现', '介绍图神经网络应用于社区发现任务的思路、案例', '<a href="./resources/GNNCourse_6_2022.pdf" target="_blank">GNNCourse_6.pdf</a>'],
-                    ['', '循环图神经网络', '介绍循环神经网络、LSTM、GRU以及在图神经网络上的应用', ''],
-                    ['', ' Invited Talk', '介绍知识图谱、工业图神经网络和图神经网络动手实践', '']]
+                    ['2022-12-21', '图异常检测', '介绍图神经网络在图异常检测上的应用', '<a href="./resources/GNNCourse_7_2022.pdf" target="_blank">GNNCourse_7.pdf</a>'],
+                    ['2022-12-28', '图神经网络探索', '介绍基于对比学习的图神经网络和动态图神经网络', '<a href="./resources/GNNCourse_8_1_2022.pdf" target="_blank">GNNCourse_8_1.pdf</a> <a href="./resources/GNNCourse_8_2_2022.pdf" target="_blank">GNNCourse_8_2.pdf</a>']]
             }
         },
        {
