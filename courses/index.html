@@ -144,7 +144,7 @@
                         <th v-for="head in section.tableData.heads" v-html="head"></th>
                     </tr>
                     <tr v-for="row in section.tableData.rows">
-                        <td v-for="rowItem in row" v-html="rowItem"></td>
+                        <td style="max-width:600px;" v-for="rowItem in row" v-html="rowItem"></td>
                     </tr>
                 </table>
             </div>
