@@ -400,8 +400,8 @@ window.userData['data-mining-2023'] = {
             }],
             tableData: { // 删除该字段，则不显示表格
                 heads: ['时间', '课程内容', '课程概述', '课程PPT'],
-                rows: [['待定', '课程简介', '介绍课程的主要内容，形式。介绍数据采集与数据预处理技术，包括数据清洗，归约与变换,介绍数据为中心的人工智能','' 
-                // '<a href="./resources/DMCourse_1_2022.pdf" target="_blank">Section1.pdf</a> '
+                rows: [['2023-09-19', '课程简介', '介绍课程的主要内容，形式。介绍数据采集与数据预处理技术，包括数据清洗，归约与变换,介绍数据为中心的人工智能',
+                '<a href="./resources/DMCourse_1_2023.pdf" target="_blank">Lecture 1.pdf</a> '
             ],
                     ['待定', '数据分类技术', '介绍常见的数据分类技术和回归任务，包括决策树、线性回归、线性判别、集成学习', ''
                     // '<a href="./resources/DMCourse_2_2022.pdf" target="_blank">Section2.pdf</a> '
