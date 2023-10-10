@@ -406,8 +406,8 @@ window.userData['data-mining-2023'] = {
                     ['2023-09-26', '数据分类技术', '介绍常见的数据分类技术和回归任务，包括决策树、线性回归、线性判别、集成学习',
                     '<a href="./resources/DMCourse_2_2023.pdf" target="_blank">Lecture 2.pdf</a> '
                 ],
-                    ['2023-10-10', '数据分类技术2', '介绍贝叶斯分类器，深入理解SVM，【New】深度分类模型，不平衡分类问题',''
-                    // '<a href="./resources/DMCourse_3_2022.pdf" target="_blank">Section3.pdf</a>'
+                    ['2023-10-10', '数据分类技术2', '介绍贝叶斯分类器，深入理解SVM，【New】深度分类模型，不平衡分类问题',
+                    '<a href="./resources/DMCourse_3_2023.pdf" target="_blank">Lecture 3.pdf</a>'
                 ],
                     ['2023-10-17', '数据聚类技术', '介绍常见的聚类检测技术和指标，包括Kmeans改进版、谱聚类、层次聚类、高斯混合模型聚类、DBSCAN聚类等技术', ''
                     // '<a href="./resources/DMCourse_4_2022.pdf" target="_blank">Section4.pdf</a>'
