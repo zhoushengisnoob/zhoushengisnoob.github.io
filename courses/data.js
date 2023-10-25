@@ -412,8 +412,8 @@ window.userData['data-mining-2023'] = {
                     ['2023-10-17', '数据聚类技术', '介绍常见的聚类检测技术和指标，包括Kmeans改进版、谱聚类、层次聚类、高斯混合模型聚类、DBSCAN聚类等技术', 
                     '<a href="./resources/DMCourse_4_2023.pdf" target="_blank">Lecture 4.pdf</a>'
                 ],
-                    ['2023-10-24', '深度聚类技术', '介绍常见的深度聚类技术，如嵌入式聚类系列、对比聚类系列、伪标签系列等，以及基于聚类的表征学习和其他数据类型的聚类。', ''
-                    // '<a href="./resources/DMCourse_5_2022.pdf" target="_blank">Section5.pdf</a>'
+                    ['2023-10-24', '深度聚类技术', '介绍常见的深度聚类技术，如嵌入式聚类系列、对比聚类系列、伪标签系列等，以及基于聚类的表征学习和其他数据类型的聚类。',
+                    '<a href="./resources/DMCourse_5_2023.pdf" target="_blank">Lecture 5.pdf</a>'
                 ],
                     ['2023-10-31', '异常检测技术', '介绍常见的异常检测技术', ''
                     // '<a href="./resources/DMCourse_6_2022.pdf" target="_blank">Section6.pdf</a>'
