@@ -415,8 +415,8 @@ window.userData['data-mining-2023'] = {
                     ['2023-10-24', '深度聚类技术', '介绍常见的深度聚类技术，如嵌入式聚类系列、对比聚类系列、伪标签系列等，以及基于聚类的表征学习和其他数据类型的聚类。',
                     '<a href="./resources/DMCourse_5_2023.pdf" target="_blank">Lecture 5.pdf</a>'
                 ],
-                    ['2023-10-31', '异常检测技术', '介绍常见的异常检测技术', ''
-                    // '<a href="./resources/DMCourse_6_2022.pdf" target="_blank">Section6.pdf</a>'
+                    ['2023-10-31', '异常检测技术', '介绍常见的异常检测技术和部分深度异常检测技术',
+                    '<a href="./resources/DMCourse_6_2023.pdf" target="_blank">Lecture 6.pdf</a>'
                 ],
                     ['2023-11-07', '深度异常检测技术', '介绍常见的深度异常检测技术，如深度特征提取、基于特征提取的异常性判断、面向异常检测的特征学习、端到端异常检测模型等。', ''
                     // '<a href="./resources/DMCourse_7_2022.pdf" target="_blank">Section7.pdf</a>'
@@ -428,7 +428,7 @@ window.userData['data-mining-2023'] = {
             navTitle: "FAQ",
             textItems: [{
                 contents: ["**Q**：本课程的考核形式是什么?",
-                    "**A**：课程将设置随堂测试(2*10%) + 期末报告(80%)",
+                    "**A**：期末实验报告或期末综述论文",
                     "**Q**：本课程如何考勤？",
                     "**A**：本课程不单独设置考勤，以随堂测试为准",
                     "**Q**：课程是否安排答疑？",
