@@ -418,8 +418,8 @@ window.userData['data-mining-2023'] = {
                     ['2023-10-31', '异常检测技术', '介绍常见的异常检测技术和部分深度异常检测技术',
                     '<a href="./resources/DMCourse_6_2023.pdf" target="_blank">Lecture 6.pdf</a>'
                 ],
-                    ['2023-11-07', '深度异常检测技术', '介绍常见的深度异常检测技术，如深度特征提取、基于特征提取的异常性判断、面向异常检测的特征学习、端到端异常检测模型等。', ''
-                    // '<a href="./resources/DMCourse_7_2022.pdf" target="_blank">Section7.pdf</a>'
+                    ['2023-11-07', '深度异常检测技术', '介绍常见的深度异常检测技术，如深度特征提取、基于特征提取的异常性判断、面向异常检测的特征学习、端到端异常检测模型等。', 
+                    '<a href="./resources/DMCourse_7_2023.pdf" target="_blank">Lecture 7.pdf</a>'
                 ]]
             }
         },
