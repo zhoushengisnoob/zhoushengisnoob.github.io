@@ -500,9 +500,9 @@ window.userData['gnn-2023'] = {
                     ['2023-11-28', '卷积图神经网络', '介绍卷积、傅里叶变换、图傅里叶变换和卷积图神经网络示例', '<a href="./resources/GNNCourse_3_2023.pdf" target="_blank">Lecture 3.pdf</a>'],
                     ['2023-12-5', '富信息图神经网络', '介绍有向图、异构图和动态图的图神经网络技术', '<a href="./resources/GNNCourse_4_2023.pdf" target="_blank">Lecture 4.pdf</a>'],
                     ['2023-12-12', '图结构学习神经网络', '介绍图结构学习神经网络、图结构生成网络', '<a href="./resources/GNNCourse_5_2023.pdf" target="_blank">Lecture 5.pdf</a>'],
-                    ['2023-12-19', '深度社区发现', '介绍图神经网络应用于社区发现任务的思路、案例', ''],
-                    ['2023-12-26', '图异常检测', '介绍图神经网络在图异常检测上的应用', ''],
-                    ['2024-01-02', '图神经网络探索', '介绍基于对比学习的图神经网络和动态图神经网络', '']]
+                    ['2023-12-19', '深度社区发现', '介绍图神经网络应用于社区发现任务的思路、案例', '<a href="./resources/GNNCourse_6_2023.pdf" target="_blank">Lecture 6.pdf</a>'],
+                    ['2023-12-26', '图异常检测', '介绍图神经网络在图异常检测上的应用', '<a href="./resources/GNNCourse_7_2023.pdf" target="_blank">Lecture 7.pdf</a>'],
+                    ['2024-01-02', '图神经网络探索', '介绍基于对比学习的图神经网络和动态图神经网络', '<a href="./resources/tutorial.ipynb" target="_blank">Tutorial.ipynb</a>']]
             }
         },
        {
