@@ -33,7 +33,7 @@ const research = [
     },
     researchPapers: [
       {
-        text: '[Deep Clustering Survey, Arxiv 2024]', // 引用文本
+        text: '[Deep Clustering Survey, ACM Computing Surveys]', // 引用文本
         link: '#test', // 引用链接
       },
       {
