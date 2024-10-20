@@ -596,7 +596,7 @@ window.userData['data-mining-2024'] = {
                     '<a href="./resources/DMCourse_4_2024.pdf" target="_blank">第四次课.pdf</a> '
                 ],
                     ['2024-10-15', '深度聚类技术', '介绍常见的深度聚类技术，如嵌入式聚类系列、对比聚类系列、伪标签系列等，以及基于聚类的表征学习和其他数据类型的聚类。',
-                    ''
+                    '<a href="./resources/DMCourse_5_2024.pdf" target="_blank">第五次课.pdf</a> '
                 ],
                     ['2024-10-22', '异常检测技术', '介绍常见的异常检测技术和部分深度异常检测技术',
                     ''
