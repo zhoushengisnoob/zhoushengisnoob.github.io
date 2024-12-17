@@ -683,7 +683,7 @@ window.userData['gnn-2024'] = {
                     ['2024-11-26', '富信息图神经网络', '介绍有向图、异构图和动态图的图神经网络技术', '<a href="./resources/GNNCourse_4_2024.pdf" target="_blank">Lecture 4.pdf</a>'],
                     ['2024-12-3', '图结构学习神经网络', '介绍图结构学习神经网络、图结构生成网络', '<a href="./resources/GNNCourse_5_2024.pdf" target="_blank">Lecture 5.pdf</a>'],
                     ['2024-12-10', '深度社区发现', '介绍图神经网络应用于社区发现任务的思路、案例', '<a href="./resources/GNNCourse_6_2024.pdf" target="_blank">Lecture 6.pdf</a>'],
-                    ['2024-12-17', '图异常检测', '介绍图神经网络在图异常检测上的应用', ''],
+                    ['2024-12-17', '图异常检测', '介绍图神经网络在图异常检测上的应用', '<a href="./resources/GNNCourse_7_2024.pdf" target="_blank">Lecture 7.pdf</a>'],
                     ['2024-12-24', '图神经网络探索', '【NEW】Graph Foundation Model', '']]
             }
         },
