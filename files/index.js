@@ -1,5 +1,29 @@
 const research = [
   {
+    researchTitle: 'AI for Social Good', // 标题
+    researchData: {
+      // link: 'http://yangy.org/img/abnormal.jpg', // 插图链接,
+      data: [
+        'We aim to build a more fair and harmonious society through AI, and help improve the survival capabilities and life experiences of special groups, such as the <b>elderly and the disabled</b>. Recently, we have been particularly focused on the information - access issues of Blind and Low - Vision (BLV) users when they use mobile phones or PCs to obtain information from the Internet, ranging from basic <b>Graphical User Interface (GUI)</b> information to complex <b>table or chart</b> information.',
+      ], // 详细内容（每个段落对应一个数据，文本内容中双引号前需加 \ 符号）
+    },
+    researchPapers: [
+      {
+        text: '[Image-based Table Accessibility, CHI 2025]', // 引用文本
+        link: '#test', // 引用链接
+      },
+      {
+        text: '[Focusability in UI Accessibility, WWW 2025]', // 引用文本
+        link: '#test', // 引用链接
+      },
+      // {
+      //   text: '[Dynamic Graph Pre-training, ICDE 2024]', // 引用文本
+      //   link: '#test', // 引用链接
+      // },
+    ],
+    researchBenchmark: [],
+  },
+  {
     researchTitle: 'Scalable Graph Learning', // 标题
     researchData: {
       // link: 'http://yangy.org/img/abnormal.jpg', // 插图链接,
