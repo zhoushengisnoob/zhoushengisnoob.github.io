@@ -87,7 +87,8 @@ $(document).ready(function () {
     var container = $('<div></div>')
       .css('backgroundColor', '#f6fbfe') // 对应 Recent Research 小节中的背景色
       .css('padding', '5px')
-      .css('width', '670px')
+      .css('width', '100%')
+      .css('maxWidth', '1100px')
       .css('marginBottom', '10px')
     var researchTitleDiv = $('<div></div>').attr('id', 'researchTitle')
     var researchDataDiv = $('<div></div>').attr('id', 'researchData')
