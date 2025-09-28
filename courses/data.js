@@ -773,7 +773,7 @@ window.userData['data-mining-2025'] = {
                     '<a href="./resources/DMCourse_2_2025.pdf" target="_blank">Lecture 2.pdf</a>'
                 ],
                     ['2025-09-28', '数据聚类技术', '介绍常见的聚类检测技术和指标，包括Kmeans改进版、谱聚类、层次聚类、高斯混合模型聚类、DBSCAN聚类等技术', 
-                    ''
+                    '<a href="./resources/DMCourse_3_2025.pdf" target="_blank">Lecture 3.pdf</a>'
                 ],
                     ['2025-09-30', '深度聚类技术', '介绍常见的深度聚类技术，如嵌入式聚类系列、对比聚类系列、伪标签系列等，以及基于聚类的表征学习和其他数据类型的聚类。',
                     ''
