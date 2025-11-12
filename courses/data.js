@@ -776,16 +776,15 @@ window.userData['data-mining-2025'] = {
                     '<a href="./resources/DMCourse_3_2025.pdf" target="_blank">Lecture 3.pdf</a>'
                 ],
                     ['2025-09-30', '深度聚类技术', '介绍常见的深度聚类技术，如嵌入式聚类系列、对比聚类系列、伪标签系列等，以及基于聚类的表征学习和其他数据类型的聚类。',
-                    ''
+                    '<a href="./resources/DMCourse_4_2025.pdf" target="_blank">Lecture 4.pdf</a>'
                 ],
                     ['2025-10-14', '异常检测技术', '介绍常见的异常检测技术和部分深度异常检测技术',
-                    ''
+                    '<a href="./resources/DMCourse_5_2025.pdf" target="_blank">Lecture 5.pdf</a>'
                 ],
-                    ['2025-10-21', '深度异常检测技术', '介绍常见的深度异常检测技术，如深度特征提取、基于特征提取的异常性判断、面向异常检测的特征学习、端到端异常检测模型等。',' ', 
-                    ''
+                    ['2025-10-21', '深度异常检测技术', '介绍常见的深度异常检测技术，如深度特征提取、基于特征提取的异常性判断、面向异常检测的特征学习、端到端异常检测模型等。','<a href="./resources/DMCourse_6_2025.pdf" target="_blank">Lecture 6.pdf</a> '
                 ],
-                ['2025-10-28', '数据分类技术2', '【New】深度分类模型，不平衡分类问题',
-                    ''
+                ['2025-10-28', '数据分类技术', '【New】深度分类模型，不平衡分类问题',
+                    '<a href="./resources/DMCourse_7_2025.pdf" target="_blank">Lecture 7.pdf</a> '
                 ]
             ]
             }
