@@ -864,11 +864,11 @@ window.userData['gnn-2025'] = {
                 rows: [['2025-11-12', '图神经网络简介', '课程介绍、认识图数据；介绍节点表征学习的方法，包括基于矩阵分解和基于随机游走', '<a href="./resources/GNNCourse_1_2025.pdf" target="_blank">Lecture 1.pdf</a>'],
                     ['2025-11-18', '经典图神经网络', '介绍基于深度自编码器的节点表征学习、融合节点属性的节点表征学习、基于消息传递的节点表征学习', '<a href="./resources/GNNCourse_2_2025.pdf" target="_blank">Lecture 2.pdf</a>'],
                     ['2024-11-25', '卷积图神经网络', '介绍卷积、傅里叶变换、图傅里叶变换和卷积图神经网络示例', '<a href="./resources/GNNCourse_3_2025.pdf" target="_blank">Lecture 3.pdf</a>'],
-                    ['2024-12-2', '富信息图神经网络', '介绍有向图、异构图和动态图的图神经网络技术', ''],
-                    ['2024-12-9', '图结构学习神经网络', '介绍图结构学习神经网络、图结构生成网络', ''],
-                    ['2024-12-16', '深度社区发现', '介绍图神经网络应用于社区发现任务的思路、案例', ''],
-                    ['2024-12-23', '图异常检测', '介绍图神经网络在图异常检测上的应用', ''],
-                    ['2024-12-30', '图神经网络探索', '【NEW】Graph Foundation Model', '']]
+                    ['2024-12-2', '富信息图神经网络', '介绍有向图、异构图和动态图的图神经网络技术', '<a href="./resources/GNNCourse_4_2025.pdf" target="_blank">Lecture 4.pdf</a>'],
+                    ['2024-12-9', '图结构学习神经网络', '介绍图结构学习神经网络、图结构生成网络', '<a href="./resources/GNNCourse_5_2025.pdf" target="_blank">Lecture 5.pdf</a>'],
+                    ['2024-12-16', '深度社区发现', '介绍图神经网络应用于社区发现任务的思路、案例', '<a href="./resources/GNNCourse_6_2025.pdf" target="_blank">Lecture 6.pdf</a>'],
+                    ['2024-12-23', '图异常检测', '介绍图神经网络在图异常检测上的应用', '<a href="./resources/GNNCourse_7_2025.pdf" target="_blank">Lecture 7.pdf</a>'],
+                    ['2024-12-30', '图神经网络探索', 'Graph Foundation Model', '<a href="./resources/GNNCourse_8_2025.pdf" target="_blank">Lecture 8.pdf</a>']]
             }
         },
        {
