@@ -4,77 +4,57 @@ const research = [
     researchData: {
       // link: 'http://yangy.org/img/abnormal.jpg', // 插图链接,
       data: [
-        'We aim to build a more fair and harmonious society through AI, and help improve the survival capabilities and life experiences of special groups, such as the <b>elderly and the disabled</b>. Recently, we have been particularly focused on the information - access issues of Blind and Low - Vision (BLV) users when they use mobile phones or PCs to obtain information from the Internet, ranging from basic <b>Graphical User Interface (GUI)</b> information to complex <b>table or chart</b> information.',
+        'We build AI systems that improve digital accessibility for <b>blind and low-vision (BLV) users</b> across mobile and web environments. Our recent work spans accessible understanding of <b>image tables, mobile charts, and GUI components</b>, as well as scalable auditing workflows for real-world web accessibility. A recurring theme is to combine multimodal perception, language generation, and user-centered interaction design so that AI can provide reliable, fine-grained, and actionable assistance in everyday digital experiences.',
       ], // 详细内容（每个段落对应一个数据，文本内容中双引号前需加 \ 符号）
     },
     researchPapers: [
       {
-        text: '[Image-based Table Accessibility, CHI 2025]', // 引用文本
-        link: '#test', // 引用链接
+        text: '[TableNarrator, CHI 2025]', // 引用文本
+        link: './papers/CHI2025.pdf', // 引用链接
       },
       {
         text: '[Focusability in UI Accessibility, WWW 2025]', // 引用文本
-        link: '#test', // 引用链接
-      },
-      // {
-      //   text: '[Dynamic Graph Pre-training, ICDE 2024]', // 引用文本
-      //   link: '#test', // 引用链接
-      // },
-    ],
-    researchBenchmark: [],
-  },
-  {
-    researchTitle: 'Scalable Graph Learning', // 标题
-    researchData: {
-      // link: 'http://yangy.org/img/abnormal.jpg', // 插图链接,
-      data: [
-        'We make efforts from both model-centric and data-centric way. In the data-centric way, we are currently exploring the <b>Graph Condensation</b> task, which aims at learning a new graph that much smaller than the original one, while GNNs trained on the condensed graph can perform as well as the one trained on the original graph. In the model-centric way, we have broad interests including the <b>knowledge distillation</b> for lightweight GNNs and directly <b>optimize the GNNs</b> design for large scale graph.',
-      ], // 详细内容（每个段落对应一个数据，文本内容中双引号前需加 \ 符号）
-    },
-    researchPapers: [
-      {
-        text: '[Graph Condensation Survey, Arxiv 2024]', // 引用文本
-        link: '#test', // 引用链接
+        link: './papers/WWW2025.pdf', // 引用链接
       },
       {
-        text: '[Scalable Graph-based Recommendation, WWW 2024]', // 引用文本
-        link: '#test', // 引用链接
+        text: '[ChartAccessMobile, W4A 2026]', // 引用文本
+        link: './papers/W4A2026-1.pdf', // 引用链接
       },
       {
-        text: '[Dynamic Graph Pre-training, ICDE 2024]', // 引用文本
-        link: '#test', // 引用链接
+        text: '[GUI Component Description for BVI Users, W4A 2026]', // 引用文本
+        link: './papers/W4A2026-2.pdf', // 引用链接
+      },
+      {
+        text: '[Web Accessibility Audit with MLLM Copilots, AAAI 2026 AISI]', // 引用文本
+        link: '#paper-aaai-2026-aisi', // 引用链接
       },
     ],
     researchBenchmark: [],
   },
   {
-    researchTitle: 'Robust Graph Learning', // 标题
+    researchTitle: 'Multi-modal Agent', // 标题
     researchData: {
       // link: 'http://yangy.org/img/abnormal.jpg', // 插图链接,
       data: [
-        'We make efforts from both model-centric and data-centric way. In the data-centric way, we are currently exploring the <b>Graph Structure Learning</b> task, which aims at update/denoise the observed graph so that GNNs trained on the revised graph perform better than the original one. In the model-centric way, we have broad interests including introducing the high-order <b>clustering</b> information into GNNs and <b>redisgn the messaging schema</b> of GNNs on the observed graph to reduce the negative impact of noise on graph.',
+        'We study <b>multi-modal agents</b> that can perceive, reason, and act in complex GUI environments. Our recent work focuses on four complementary directions: enriching agents with <b>structured environment memory</b>, improving <b>history-aware reasoning</b> for long-horizon interaction, building <b>process-aware benchmarks</b> for authentic evaluation, and developing <b>lightweight orchestration frameworks</b> that make MLLM-based agents scalable and deployable on real devices. Together, these efforts aim to make GUI agents more reliable, efficient, and practical in real-world mobile and desktop workflows.',
       ], // 详细内容（每个段落对应一个数据，文本内容中双引号前需加 \ 符号）
     },
     researchPapers: [
       {
-        text: '[Deep Clustering Survey, ACM Computing Surveys]', // 引用文本
-        link: '#test', // 引用链接
+        text: '[PG-Agent, ACM MM 2025]', // 引用文本
+        link: './papers/MM2025.pdf', // 引用链接
       },
       {
-        text: '[Robust Graph-based Recommendation, WWW 2024]', // 引用文本
-        link: '#test', // 引用链接
+        text: '[History-Aware Reasoning for GUI Agents, AAAI 2026]', // 引用文本
+        link: './papers/AAAI2026-HAR.pdf', // 引用链接
       },
       {
-        text: '[Graph Structure Learning Benchmark, NeurIPS 2023]', // 引用文本
-        link: '#test', // 引用链接
+        text: '[ProBench, AAAI 2026]', // 引用文本
+        link: './papers/AAAI2026-ProBench.pdf', // 引用链接
       },
       {
-        text: '[Graph Clustering with GSL, CIKM 2023]', // 引用文本
-        link: '#test', // 引用链接
-      },
-      {
-        text: '[Reinforcement Neighborhood Selection, ICDM 2023]', // 引用文本
-        link: '#test', // 引用链接
+        text: '[LAMO, Findings of ACL 2026]', // 引用文本
+        link: './papers/ACL2026.pdf', // 引用链接
       },
     ],
     researchBenchmark: [],
