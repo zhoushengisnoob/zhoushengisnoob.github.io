@@ -1,6 +1,8 @@
 // Curated from the title, abstract, and method description of each local PDF.
 // File names are stable identifiers shared by the bilingual static pages.
 window.PUBLICATION_KEYWORDS = Object.freeze({
+  "EMNLP2026-DocCoB": ["latest", "visual-understanding", "document-understanding", "multimodal", "reasoning"],
+  "EMNLP2026-MaSVQA": ["latest", "visual-understanding", "visual-question-answering", "multimodal", "knowledge-reasoning"],
   "AAAI2026-GRASP.pdf": ["latest", "accessibility", "web-accessibility", "multimodal", "llm"],
   "AAAI2026-HAR.pdf": ["latest", "gui-agent", "multimodal", "agent-reasoning", "reinforcement-learning"],
   "AAAI2026-ProBench.pdf": ["latest", "gui-agent", "benchmark", "multimodal", "mobile"],
